@@ -1,0 +1,19 @@
+{
+  "timestamp": "2020-05-16T13:34:00Z",
+  "name": "Gordy",
+  "age": "30",
+  "battle_tag": "tosh#1395",
+  "armory": "https://worldofwarcraft.com/en-us/character/us/kiljaeden/toshpal",
+  "logs": "https://www.warcraftlogs.com/character/id/39249750",
+  "ui": "https://imgur.com/X8r9GHg",
+  "other": [
+    {
+      "question": "Raid History - Why did you leave?",
+      "answer": "Koopa Troopa: couldn't make raid times"
+    },
+    {
+      "question": "Why Rivalry?",
+      "answer": "My fiance got poached and so I tagged along"
+    }
+  ]
+}
