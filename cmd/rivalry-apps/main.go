@@ -6,6 +6,7 @@ import (
 	"io"
 
 	"github.com/bwmarrin/discordgo"
+	"github.com/gin-gonic/gin"
 	"github.com/gtosh4/rivalry-apps/internal/app"
 	"github.com/sirupsen/logrus"
 )
@@ -21,6 +22,8 @@ func main() {
 	log := logrus.New()
 	if debug {
 		log.SetLevel(logrus.DebugLevel)
+	} else {
+		gin.SetMode(gin.ReleaseMode)
 	}
 
 	if token == "" {
@@ -40,6 +43,7 @@ func main() {
 		log.Fatalf("Error opening connection to discord gateway: %+v", err)
 		return
 	}
+	log.Info("Connected to discord gateway")
 
 	srv := app.NewServer(log, dg, ":9004")
 
